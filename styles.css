@@ -266,6 +266,7 @@ section:first-of-type{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--clr-light);
     background-color: var(--clr-dark);
     padding: 10px;
     box-shadow: 0 0 5px var(--clr-dark);
@@ -559,4 +560,26 @@ iframe{
     width: 100%;
     height: 315px;
     margin: 5px
+}
+/* Samples Page */
+#samples{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#samples .card{
+    margin-bottom: 5%;
+}
+.card img.short-pic{
+    height: 100px;
+    object-fit: cover;
+}
+#samples a{
+    text-decoration: none;
+    color: var(--clr-light)
+}
+#samples a:hover{
+    text-decoration: underline;
 }
