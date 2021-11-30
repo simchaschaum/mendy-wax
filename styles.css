@@ -306,20 +306,7 @@ section:first-of-type{
         width: 100%;
     }
 }
-.link-button{
-    font-size: 2em;
-    background-color: var(--clr-light);
-    color: white;
-    border: none;
-    border-radius: 3px;
-    text-decoration: none;
-    padding: 0.25em 0.75em;
-}
-.link-button:hover,
-.link-button:focus{
-    background-color: #615192;
-    color: white
-}
+
 /* Contact Us */
 #contact-us-form{
     display: flex;
@@ -493,8 +480,7 @@ button[type=submit]{
     width: 100%;
 }
 }
-
-/* All 'hero' sections (top of each non-home page) */
+/* FORMATTING FOR ALL NON-HOME PAGES: */
 section.hero{
     width: 100%;
     height: 2vh;
@@ -502,17 +488,75 @@ section.hero{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;}
+    background-size: cover;
+}
+.details-container{
+    width: 90%;
+    margin: 5% auto;
+}
+.link-button{
+    font-size: 2em;
+    background-color: var(--clr-light);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 0.25em 0.75em;
+}
+.link-button:hover,
+.link-button:focus{
+    background-color: #615192;
+    color: white
+}
+.link-button-dark{
+    font-size: 2em;
+    background-color: var(--clr-dark);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 0.25em 0.75em;
+}
+.link-button-dark:hover,
+.link-button-dark:focus{
+    background-color: #615192;
+    color: white
+}
 /* ABOUT US */
 #about-container{
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-
+#about-container h4{
+    text-align: center;
+}
+#about-container a{
+    margin: 0 auto
+}
 /* All anchors - adjusted down to avoid being blocked by navbar */
 .anchor{
     margin-top: -60px;
     padding-bottom: 60px;
 }
 
+/* Video page */
+#videos{
+    padding: 5%
+}
+#video-container{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+@media(max-width: 768px){
+    #video-container{
+        grid-template-columns: 1fr;
+    }
+}
+iframe{
+    width: 100%;
+    height: 315px;
+    margin: 5px
+}
