@@ -65,6 +65,9 @@ footer p:not(:first-child) {
 #links-footer{
     display: flex;
 }
+#links-footer .inactive{
+    pointer-events: none;
+}
 #links-footer a{
     border-right: var(--clr-light) 1px solid;
     display: block;
@@ -114,10 +117,6 @@ footer div>div:first-of-type{
 
 
 /* Navbar */
-.active{
-    pointer-events: none;
-    font-weight: bold;
-}
 nav{
     position: fixed !important;
     transition: font-size 0.2s, height 0.2s;
@@ -129,17 +128,16 @@ nav{
 .bg-light{
     background-color: var(--clr-light) !important;
 }
-
 .nav-link{
     color: var(--clr-dark) !important;
     font-weight: bold;
     min-width: 140px;
-
 }
 .nav-link:hover{
     background-color: var(--clr-dark);
     color: white !important;
 }
+
 #navbar-logo{
     transition: width 0.4s;
     max-width: 7em;
