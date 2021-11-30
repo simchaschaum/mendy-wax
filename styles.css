@@ -59,7 +59,7 @@ footer{
 footer p{
     margin-bottom: 0;
 }
-footer p:nth-of-type(2){
+footer p:not(:first-child) {
     font-size: .75em;
 }
 #links-footer{
@@ -133,9 +133,12 @@ nav{
 .nav-link{
     color: var(--clr-dark) !important;
     font-weight: bold;
-}
-.nav-link{
     min-width: 140px;
+
+}
+.nav-link:hover{
+    background-color: var(--clr-dark);
+    color: white !important;
 }
 #navbar-logo{
     transition: width 0.4s;
@@ -162,7 +165,7 @@ nav{
         transition: height 0.4s;
     }
     .nav-link:not(:last-child){
-        border-right: 1px solid;
+        border-right: 1px solid var(--clr-dark);
         padding: 8px 16px !important;
     }
     .nav-shrink{
@@ -174,7 +177,7 @@ nav{
         transition: height 0.4s;
     }
     .nav-shrink #navbar-logo{
-        width: 4em;
+        width: 3.5em;
     }
 }   
 
@@ -182,10 +185,10 @@ nav{
 section{
     min-height: 80vh;
     width: 85%;
-    margin: 0 auto 10% auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     color: var(--clr-dark)
 }
@@ -199,6 +202,7 @@ section:first-of-type{
 }
 /* Home */
 #intro{
+    height: 80vh;
     width: 100%;
     background-image: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg');
     -webkit-background-size: cover;
@@ -206,8 +210,12 @@ section:first-of-type{
     -o-background-size: cover;
     background-size: cover;
 }
+#down-arrow{
+    filter: invert(100%);
+    width: 1.75em;
+}
 #intro-cover{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background: linear-gradient(to bottom,  rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 0.1) 100%); 
     display: flex;
@@ -230,47 +238,69 @@ section:first-of-type{
 #intro h2{
     font-size: 4em;
 }
+#intro-details{
+    padding: 5%
+}
+#intro-details h2{
+    margin-bottom: 5%;
+}
 #intro-details>div{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 50px;
 }
 @media(max-width: 768px){
+    #intro-details{
+        padding: 0
+    }
     #intro-details>div{
         flex-direction: column;
+        width: 100%;
     } 
     #intro h2{
         font-size: 2.5em;
     }
 }
-#intro-details>div>div{
-    position: relative;
-    width: 45%;
-    max-width: 350px;
-    height: 400px;
-    margin: 0 auto 25px auto;
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-dark);
+    padding: 10px;
+    box-shadow: 0 0 5px var(--clr-dark);
+    margin: 5px;
+    width: 325px;
 }
-@media (max-width:768px) {
-    #intro-details>div>div{
-        width: 100%
+.card img{
+    width: 300px;
+    height: 325px;
+    /* object-fit: cover; */
+}
+.card a{
+    text-decoration: none;
+    color: var(--clr-light)
+}
+.card a:hover,
+.card a:focus{
+    text-decoration: underline;
+}
+.card div{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card div>p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media(max-width:768px){
+    .card{
+        width: 100%;
     }
-}
-.intro-details-pic{
-    z-index: -1;
-}
-.intro-details-pic img{
-    max-width: 350px;
-    width: 100%;
-    z-index: -1
-}
-.intro-details-text p{
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 5%;
-    font-size: 2em;
 }
 .link-button{
     font-size: 2em;
@@ -284,8 +314,7 @@ section:first-of-type{
 .link-button:hover,
 .link-button:focus{
     background-color: #615192;
-    color: var(--clr-sec); 
-    /* COLOR */
+    color: white
 }
 /* Contact Us */
 #contact-us-form{
@@ -504,7 +533,9 @@ button[type=submit]{
         width: 100%
     }
 }
-.about-anchor{
+/* All anchors - adjusted down to avoid being blocked by navbar */
+.anchor{
     margin-top: -60px;
     padding-bottom: 60px;
 }
+
