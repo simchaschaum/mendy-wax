@@ -601,6 +601,12 @@ iframe{
         min-width: 95vw
     }
 }
+.accordion-button{
+    color: var(--clr-dark)
+}
+.accordion-button:not(.collapsed){
+    color: var(--clr-dark)
+}
 
 /* Single */
 #single{
