@@ -183,7 +183,7 @@ nav{
 
 /* Sections - general */
 section{
-    min-height: 80vh;
+    min-height: 30vh;
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -215,7 +215,7 @@ section:first-of-type{
     width: 1.75em;
 }
 #intro-cover{
-    height: 80vh;
+    height: 100%;
     width: 100%;
     background: linear-gradient(to bottom,  rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 0.1) 100%); 
     display: flex;
@@ -229,7 +229,7 @@ section:first-of-type{
 }
 @media (max-width: 678px) {
     #intro-cover{
-        margin-top: 40px;        
+        padding-top: 40px;        
     }
 }
 #intro-cover>div{
@@ -496,49 +496,22 @@ button[type=submit]{
 }
 }
 
-/* ABOUT US */
-#about-intro{
+/* All 'hero' sections (top of each non-home page) */
+section.hero{
     width: 100%;
-    background-image: url('./pictures/Har_nof.jpg');
+    height: 2vh;
+    background: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    margin-bottom: 5%;
-}
-
+    background-size: cover;}
+/* ABOUT US */
 #about-container{
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-.about-container-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10%;
-}
-.about-container-row:nth-of-type(2){
-    flex-direction: row-reverse;
-}
-.about-container-row img{
-    width: 300px
-}
-.about-container-text{
-    width: 50%
-}
-@media (max-width:768px) {
-    .about-container-row,
-    .about-container-row:nth-of-type(2){
-        flex-direction: column;
-    }
-    .about-container-row img{
-        width: 100%
-    }
-    .about-container-text{
-        width: 100%
-    }
-}
+
 /* All anchors - adjusted down to avoid being blocked by navbar */
 .anchor{
     margin-top: -60px;
