@@ -562,24 +562,42 @@ iframe{
     margin: 5px
 }
 /* Samples Page */
-#samples{
+#sheet-music{
     padding: 5%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#samples .card{
+#sheet-music .card{
     margin-bottom: 5%;
 }
 .card img.short-pic{
     height: 100px;
     object-fit: cover;
 }
-#samples a{
+#sheet-music a{
     text-decoration: none;
     color: var(--clr-light)
 }
-#samples a:hover{
+#sheet-music a:hover{
     text-decoration: underline;
+}
+
+/* Audio Samples */
+#samples{
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.accordion{
+    min-width: 400px;
+}
+@media (max-width:768px) {
+    .accordion{
+        min-width: 95vw
+    }
 }
