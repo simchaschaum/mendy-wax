@@ -274,6 +274,11 @@ section:first-of-type{
     margin: 5px;
     width: 325px;
 }
+@media(min-width:769px){
+    .card:hover{
+        box-shadow: 0 0 20px var(--clr-dark);
+    }
+}
 .card img{
     width: 300px;
     height: 325px;
@@ -287,6 +292,7 @@ section:first-of-type{
 .card a:focus{
     text-decoration: underline;
 }
+
 .card div{
     height: 3em;
     display: flex;
