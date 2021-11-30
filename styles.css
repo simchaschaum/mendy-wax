@@ -601,3 +601,23 @@ iframe{
         min-width: 95vw
     }
 }
+
+/* Single */
+#single{
+    margin: 5%
+}
+#single h4{
+    text-align: center;
+}
+#single>div{
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#single>div img{
+    width: 400px;
+    box-shadow: 0 0 5px var(--clr-dark);
+}
