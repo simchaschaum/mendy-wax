@@ -115,7 +115,6 @@ footer div>div:first-of-type{
 }
 
 
-
 /* Navbar */
 nav{
     position: fixed !important;
@@ -131,7 +130,7 @@ nav{
 .nav-link{
     color: var(--clr-dark) !important;
     font-weight: bold;
-    min-width: 140px;
+    /* min-width: 140px; */
 }
 .nav-link:hover{
     background-color: var(--clr-dark);
@@ -583,6 +582,10 @@ iframe{
 #sheet-music a:hover{
     text-decoration: underline;
 }
+/* songs - audio player */
+.song{
+    margin-bottom: 5%;
+}
 
 /* Audio Samples */
 #samples{
@@ -627,3 +630,49 @@ iframe{
     width: 400px;
     box-shadow: 0 0 5px var(--clr-dark);
 }
+/* Album */
+#album{
+    margin: 5%;
+}
+#album h4{
+    text-align: center;
+}
+#album>div{
+    width: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#album>div>img{
+    width: 100%;
+    padding: 0 5% 5% 5%;
+}
+@media(max-width:1200px){
+    #album>div{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #album>div>div:last-of-type{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+}
+@media(max-width:800px){
+    #album>div{
+        grid-template-columns: 1fr
+    }
+    #album>div>div>.song{
+        margin: 0 auto 5% auto;
+        width: 75%;
+    }
+    #album audio{
+        max-width: 100%;
+    }
+    #album>div>div:first-of-type{
+        padding-top: 5%
+    }
+    #album>div>div:last-of-type{
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+}
+
