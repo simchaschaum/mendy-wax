@@ -40,10 +40,40 @@
           </div>
         </div>
       </section>
-      <section id="about">
-        <span id="about-anchor" class="about-anchor"></span>
-        <div id="about-container">
- 
+      <section id="contact-us">
+        <h2>Phone Number: 972-58-723-3506</h2>
+        <div id="contact-us-form">
+          <form class="container"  action="https://formspree.io/f/mjvlbjkb" method="POST">
+            <div class="row">
+              <div class="mb-3 col">
+                <label for="firstName" class="form-label">First Name (required)</label>
+                <input type="text" name="firstName" class="form-control" id="firstName" aria-describedby="emailHelp" required>
+              </div>
+              <div class="mb-3 col">
+                <label for="lastName" class="form-label">Last Name (required)</label>
+                <input type="text" name="lastName"class="form-control" id="lastName" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-3 col">
+                <label for="exampleInputEmail1" class="form-label">Email (required)</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              </div>
+              <div class="mb-3 col">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" name="phone" class="form-control" id="phone">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="message" class="form-label">Your Message (required)</label>
+                <textarea type="text" name="message" class="form-control" id="message" required></textarea>
+              </div>
+            </div>
+            <div class="row"> 
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
         </div>
       </section>
     </div>

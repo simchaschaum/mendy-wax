@@ -308,6 +308,9 @@ section:first-of-type{
 }
 
 /* Contact Us */
+#contact-us{
+    padding: 5%
+}
 #contact-us-form{
     display: flex;
     width: 100%
@@ -331,7 +334,7 @@ button[type=submit]{
 .btn-primary:focus{
     background-color: #615192;
     /* color */
-    color: var(--clr-sec);
+    color: white
 }
 #map-social-section{
     min-height: auto;
