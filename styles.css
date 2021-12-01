@@ -69,16 +69,18 @@ footer p:not(:first-child) {
     pointer-events: none;
 }
 #links-footer a{
+    font-size: 15px;
     border-right: var(--clr-light) 1px solid;
     display: block;
-    min-width: 80px;
+    min-width: 85px;
+    padding: 0 2.5px 0 2.5px;
     display: flex;
     justify-content: center;
 }
 #links-footer a:last-of-type{
     border-right: none;
 }
-@media(max-width: 974px){
+@media(max-width: 1060px){
     #links-footer{
         display: none;
     }
@@ -130,6 +132,7 @@ nav{
 .nav-link{
     color: var(--clr-dark) !important;
     font-weight: bold;
+    font-size: 20px;
     /* min-width: 140px; */
 }
 .nav-link:hover{
