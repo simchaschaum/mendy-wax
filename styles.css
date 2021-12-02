@@ -3,7 +3,6 @@
     box-sizing: border-box;
     padding: none;
     font-family: 'Lato', sans-serif;
-    color: var(--clr-main);
     scroll-behavior: smooth;
 }
 
@@ -204,7 +203,7 @@ section{
 }
 @media(max-width: 768px){
     section{
-        margin-bottom: 20%;
+        margin-bottom: 15%;
     }
 }
 section:first-of-type{
@@ -322,15 +321,13 @@ section:first-of-type{
 
 
 /* Contact Us */
-#contact-us{
-    padding: 5%
-}
 #contact-us-form{
     display: flex;
     width: 100%
 }
 #contact-us-form>form{
-        width: 60%
+        width: 60%;
+        color: var(--clr-lightgr)
 }
 #contact-us-form>*{
     padding: 5%
@@ -340,13 +337,13 @@ button[type=submit]{
     width: 25%;
 }
 .btn-primary{
-    background-color: var(--clr-dark);
+    background-color: var(--clr-lightgr);
     color: white;
     border: none;
 }
 .btn-primary:hover,
 .btn-primary:focus{
-    background-color: #615192;
+    background-color: var(--clr-light);
     /* color */
     color: white
 }
@@ -514,6 +511,9 @@ section.hero{
 .details-container p{
     text-align: left;
 }
+.details-container h2{
+    color: var(--clr-lightgr)
+}
 .details-container a{
     color: var(--clr-light);
     text-decoration: none;
@@ -529,7 +529,7 @@ section.hero{
     border: none;
     border-radius: 3px;
     text-decoration: none;
-    padding: 0.25em 0.75em;
+    padding: 0.5em 0.75em;
 }
 .link-button:hover,
 .link-button:focus{
@@ -581,9 +581,7 @@ section.hero{
 }
 
 /* Video page */
-#videos{
-    padding: 5%
-}
+
 #video-container{
     width: 95%;
     display: grid;
@@ -643,6 +641,9 @@ iframe{
     .accordion{
         min-width: 95vw
     }
+}
+.accordion h4{
+    color: var(--clr-dark)
 }
 .accordion-button{
     color: var(--clr-dark)
