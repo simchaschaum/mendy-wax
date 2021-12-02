@@ -220,7 +220,8 @@ section:first-of-type{
     background-size: cover;
 }
 #intro-cover{
-    height: 100%;
+    height: 101%;
+    transform: translateY(-1px);
     width: 100%;
     background: linear-gradient(to bottom,  rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 0.1) 100%); 
     display: flex;
@@ -504,7 +505,7 @@ button[type=submit]{
 /* FORMATTING FOR ALL NON-HOME PAGES: */
 section.hero{
     width: 100%;
-    height: 2vh;
+    min-height: 2vh;
     background: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
