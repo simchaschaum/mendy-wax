@@ -213,7 +213,8 @@ section:first-of-type{
 #intro{
     height: 80vh;
     width: 100%;
-    background-image: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg');
+    /* background-image: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg'); */
+    background-image: url('./pictures/Mendy-Guitar-darkbgrnd.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -283,9 +284,12 @@ section:first-of-type{
 .inner-card{
     width: 300px;
     height: 325px;
-    background-color: var(--clr-lightgr);
+    border: 1px solid var(--clr-lightgr);
     border-radius: 0.25em;
     padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card img{
     width: 300px;
@@ -293,7 +297,8 @@ section:first-of-type{
     /* object-fit: cover; */
 }
 .inner-card>img{
-    width: 250px;
+    width: 200px;
+    height: auto;
 }
 .card a{
     text-decoration: none;
@@ -506,7 +511,8 @@ button[type=submit]{
 section.hero{
     width: 100%;
     min-height: 2vh;
-    background: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg') no-repeat center center;
+    /* background: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg') no-repeat center center; */
+    background: url('./pictures/Mendy-Guitar.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -606,7 +612,7 @@ iframe{
     height: 315px;
     margin: 5px
 }
-/* Samples Page */
+/* Sheet music Page */
 #sheet-music{
     padding: 5%;
     width: 100%;
@@ -651,6 +657,9 @@ iframe{
     }
 }
 .accordion h4{
+    color: var(--clr-dark)
+}
+.accordion p{
     color: var(--clr-dark)
 }
 .accordion-button{
