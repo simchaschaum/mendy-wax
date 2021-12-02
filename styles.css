@@ -321,6 +321,13 @@ section:first-of-type{
 
 
 /* Contact Us */
+#contact-us h2{
+    margin: 0 auto;
+    text-align: center;
+}
+#contact-us>div{
+    margin-bottom: 0;
+}
 #contact-us-form{
     display: flex;
     width: 100%
