@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Voltaire&display=swap');
 *{
     box-sizing: border-box;
     padding: none;
-    font-family: 'Voltaire', sans-serif;    
+    font-family: 'Lato', sans-serif;
     color: var(--clr-main);
     scroll-behavior: smooth;
 }
 
 :root{
-    --clr-light: #F5756B; 
-    --clr-dark: #353D60;
+    --clr-light: #2589e4; 
+    --clr-dark: #2b2a2b;
+    --clr-lightgr: #959595
 }
 
 #page-container{
@@ -18,7 +18,9 @@
     min-height: 100vh;
     height: auto;
     width: 100%;
-    background: linear-gradient(#ffffff, #F5756B );
+    /* background: linear-gradient(#ffffff, #2789e3 ); */
+    /* background: var(--clr-light); */
+    background: rgba(43, 42, 43,1)
 }
 #content-wrap{
     margin-top: 125px;
@@ -29,14 +31,20 @@
 h1{
     font-size: 3.5em;
 }
+h2{
+    /* color: var(--clr-lightgr); */
+    color: var(--clr-dark);
+}
 h3{
     font-size: 2.5em;
 }
 h4{
     font-size: 2em;
+    color: var(--clr-lightgr)
 }
 p{
     font-size: 1.25em;
+    color: var(--clr-lightgr)
 }
 
 /* Footer */
@@ -49,8 +57,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--clr-light);
-    background-color: var(--clr-dark);
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
 }
 #logo-footer{
     width: 100px;
@@ -58,9 +66,11 @@ footer{
 }
 footer p{
     margin-bottom: 0;
+    color: var(--clr-dark);
+    font-size: 1em;
 }
 footer p:not(:first-child) {
-    font-size: .75em;
+    font-size: .60em;
 }
 #links-footer{
     display: flex;
@@ -70,7 +80,7 @@ footer p:not(:first-child) {
 }
 #links-footer a{
     font-size: 15px;
-    border-right: var(--clr-light) 1px solid;
+    border-right: var(--clr-dark) 1px solid;
     display: block;
     min-width: 85px;
     padding: 0 2.5px 0 2.5px;
@@ -80,18 +90,18 @@ footer p:not(:first-child) {
 #links-footer a:last-of-type{
     border-right: none;
 }
-@media(max-width: 1060px){
+@media(max-width: 1150px){
     #links-footer{
         display: none;
     }
 }
 footer a{
     text-decoration: none;
-    color: var(--clr-light);
+    color: var(--clr-dark);
 }
 footer a:hover{
     text-decoration: underline;
-    color: var(--clr-light);
+    color: var(--clr-dark);
 }
 footer div{
     display: flex;
@@ -123,14 +133,14 @@ nav{
     transition: font-size 0.2s, height 0.2s;
     top: 0;
     width: 100%;
-    box-shadow: 0 0 5px var(--clr-dark);
+    box-shadow: 0 0 5px var(--clr-lightgr);
     z-index: 100;
 }
 .bg-light{
-    background-color: var(--clr-light) !important;
+    background-color: var(--clr-dark) !important;
 }
 .nav-link{
-    color: var(--clr-dark) !important;
+    color: var(--clr-light) !important;
     font-weight: bold;
     font-size: 20px;
     /* min-width: 140px; */
@@ -271,13 +281,13 @@ section:first-of-type{
     color: var(--clr-light);
     background-color: var(--clr-dark);
     padding: 10px;
-    box-shadow: 0 0 5px var(--clr-dark);
+    box-shadow: 0 0 5px var(--clr-lightgr);
     margin: 5px;
     width: 325px;
 }
 @media(min-width:769px){
     .card:hover{
-        box-shadow: 0 0 20px var(--clr-dark);
+        box-shadow: 0 0 20px var(--clr-lightgr);
     }
 }
 .card img{
@@ -298,7 +308,6 @@ section:first-of-type{
     height: 3em;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .card div>p{
     margin-top: 0;
@@ -500,6 +509,9 @@ section.hero{
     width: 90%;
     margin: 5% auto;
 }
+.details-container p{
+    text-align: left;
+}
 .link-button{
     font-size: 2em;
     background-color: var(--clr-light);
@@ -618,13 +630,7 @@ iframe{
 }
 
 /* Single */
-#single{
-    margin: 5%
-}
-#single h4{
-    text-align: center;
-}
-#single>div{
+#single-song{
     width: 90%;
     margin: 5%;
     display: flex;
@@ -632,9 +638,10 @@ iframe{
     justify-content: space-around;
     align-items: center;
 }
-#single>div img{
+#single-song> img{
     width: 400px;
-    box-shadow: 0 0 5px var(--clr-dark);
+    box-shadow: 0 0 5px var(--clr-lightgr);
+    margin: 0 5% 5% 5%;
 }
 /* Album */
 #album{
