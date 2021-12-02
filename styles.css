@@ -644,13 +644,7 @@ iframe{
     margin: 0 5% 5% 5%;
 }
 /* Album */
-#album{
-    margin: 5%;
-}
-#album h4{
-    text-align: center;
-}
-#album>div{
+#album>div:not(:first-of-type){
     width: 90%;
     margin: 5%;
     display: grid;
