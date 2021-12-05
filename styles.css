@@ -240,10 +240,17 @@ section:first-of-type{
     }
 }
 #intro-cover>div{
-    margin: 5% 10%
+    margin: 5% 10%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 #intro h2{
     font-size: 4em;
+}
+#intro a {
+    width: 300px;
 }
 #intro-details>div:not(:first-of-type){
     width: 100%;
@@ -294,7 +301,9 @@ section:first-of-type{
 .card img{
     width: 300px;
     height: 325px;
-    /* object-fit: cover; */
+}
+#video-card img{
+    object-fit: cover;
 }
 .inner-card>img{
     width: 200px;
@@ -324,7 +333,19 @@ section:first-of-type{
         width: 100%;
     }
 }
-
+/* Music Lessons */
+#music-lessons-contact-div{
+    display: flex;
+    justify-content: center;
+}
+#music-lessons .link-button{
+    background-color: var(--clr-lightgr);
+    color: white;
+}
+#music-lessons .link-button:hover{
+    text-decoration: none;
+    background-color: var(--clr-light);
+}
 
 /* Contact Us */
 #contact-us h2{
@@ -512,7 +533,7 @@ section.hero{
     width: 100%;
     min-height: 2vh;
     /* background: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg') no-repeat center center; */
-    background: url('./pictures/Mendy-Guitar.jpg') no-repeat center center;
+    background: url('./pictures/Mendy-Guitar-darkbgrnd.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
