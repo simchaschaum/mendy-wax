@@ -656,8 +656,10 @@ iframe{
     text-decoration: underline;
 }
 /* songs - audio player */
-.song{
-    margin-bottom: 5%;
+figcaption{
+    color: var(--clr-lightgr);
+    font-size: 1.25em;
+    margin-bottom: 10px;
 }
 
 /* Audio Samples */
@@ -725,8 +727,8 @@ iframe{
     }
 }
 @media(max-width:800px){
-    #album>div{
-        grid-template-columns: 1fr
+    #album>div:not(:first-of-type){
+        grid-template-columns: repeat(1,1fr)
     }
     #album>div>div>.song{
         margin: 0 auto 5% auto;
