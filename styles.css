@@ -318,7 +318,8 @@ section:first-of-type{
     width: 300px;
     height: 325px;
 }
-#video-card img{
+#video-card img,
+#samples-card img{
     object-fit: cover;
 }
 .inner-card>img{
