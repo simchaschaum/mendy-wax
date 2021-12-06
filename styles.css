@@ -259,6 +259,12 @@ section:first-of-type{
 #intro h2{
     font-size: 4em;
 }
+#subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1em;
+}
 #intro a {
     width: 300px;
 }
