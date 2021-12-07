@@ -330,8 +330,7 @@ section:first-of-type{
     width: 300px;
     height: 325px;
 }
-#video-card img,
-#samples-card img{
+.fit-picture img{
     object-fit: cover;
 }
 .inner-card>img{
