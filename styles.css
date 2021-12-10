@@ -223,6 +223,7 @@ section:first-of-type{
 /* Home */
 #intro{
     height: 80vh;
+    padding-bottom: -1px;
     width: 100%;
     /* background-image: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg'); */
     background-image: url('./pictures/Mendy-Guitar-darkbgrnd.png');
@@ -232,7 +233,8 @@ section:first-of-type{
     background-size: cover;
 }
 #intro-cover{
-    height: 101%;
+    height: 100%;
+    margin-bottom: -1px;
     transform: translateY(-1px);
     width: 100%;
     background: linear-gradient(to bottom,  rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 0.3) 100%); 
