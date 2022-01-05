@@ -782,3 +782,42 @@ figcaption{
     }
 }
 
+/* Testimonials Page */
+#testimonials{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.testimonial{
+    width: 45%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    padding: 25px;
+    box-shadow: 0 0 5px var(--clr-lightgr);
+    margin: 60px 15px 15px 15px;
+    position: relative
+}
+@media(max-width: 750px){
+    .testimonial{
+        width: 90%;
+    }
+}
+.testimonial>div{
+    display: flex;
+}
+.test-quotation-mark{
+    position: absolute;
+    top: -50px;
+    width: 75px;
+}
+.test-quote{
+    font-style: italic;
+    font-size: 1.25em;
+}
+.test-name{
+    font-weight: bold;
+}
