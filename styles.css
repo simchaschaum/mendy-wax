@@ -821,3 +821,7 @@ figcaption{
 .test-name{
     font-weight: bold;
 }
+.test-quote,
+.test-name{
+    color: var(--clr-light)
+}
