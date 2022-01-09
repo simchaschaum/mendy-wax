@@ -307,10 +307,9 @@ section:first-of-type{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--clr-light);
     background-color: var(--clr-dark);
     padding: 10px;
-    box-shadow: 0 0 5px var(--clr-lightgr);
+    box-shadow: 0 0 5px var(--clr-light);
     margin: 5px;
     width: 325px;
 }
@@ -322,7 +321,10 @@ section:first-of-type{
 .card a{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
+}
+.card p{
+    color: var(--clr-light)
 }
 .inner-card{
     width: 300px;
