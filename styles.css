@@ -771,9 +771,11 @@ figcaption{
     left: 0;
     right: 0;
     margin: 0 auto;
+    /* Height and width are set so that (a) both are set to the h/w of the page, but neither can be greater than the other one. This helps because the ratio of all pictures is 1:1 */
     height: 100vh;
-    width: 100%;
-    max-width: 90vw;
+    max-height: 100vw;
+    width: 100vh;
+    max-width: 100vw;
     z-index: 10001;
 }
 #cover{
