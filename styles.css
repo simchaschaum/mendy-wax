@@ -61,6 +61,7 @@ footer{
 }
 #logo-footer{
     width: 100px;
+    height: 100%;
     margin: 10px;
 }
 footer p{
@@ -222,6 +223,7 @@ section:first-of-type{
 /* Home */
 #intro{
     height: 80vh;
+    padding-bottom: -1px;
     width: 100%;
     /* background-image: url('./pictures/jefferson-santos-fCEJGBzAkrU-unsplash.jpg'); */
     background-image: url('./pictures/Mendy-Guitar-darkbgrnd.png');
@@ -231,7 +233,8 @@ section:first-of-type{
     background-size: cover;
 }
 #intro-cover{
-    height: 101%;
+    height: 100%;
+    margin-bottom: -1px;
     transform: translateY(-1px);
     width: 100%;
     background: linear-gradient(to bottom,  rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 0.3) 100%); 
@@ -257,13 +260,25 @@ section:first-of-type{
     justify-content: space-around;
 }
 #intro h2{
-    font-size: 4em;
+    font-size: 5em;
 }
 #subtitle{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 1em;
+}
+@media(max-width: 1100px){
+    #subtitle{
+        flex-direction: column;
+    }
+    .bullet{
+        display: none;
+    }
+    #subtitle h3{
+        font-size: 1.5em;
+    }
 }
 #intro a {
     width: 300px;
@@ -284,7 +299,7 @@ section:first-of-type{
         width: 100%;
     } 
     #intro h2{
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
 }
 .card{
@@ -292,10 +307,9 @@ section:first-of-type{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--clr-light);
     background-color: var(--clr-dark);
     padding: 10px;
-    box-shadow: 0 0 5px var(--clr-lightgr);
+    box-shadow: 0 0 5px var(--clr-light);
     margin: 5px;
     width: 325px;
 }
@@ -303,6 +317,14 @@ section:first-of-type{
     .card:hover{
         box-shadow: 0 0 20px var(--clr-light);
     }
+}
+.card a{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.card p{
+    color: var(--clr-light)
 }
 .inner-card{
     width: 300px;
@@ -318,7 +340,7 @@ section:first-of-type{
     width: 300px;
     height: 325px;
 }
-#video-card img{
+.fit-picture img{
     object-fit: cover;
 }
 .inner-card>img{
@@ -748,6 +770,7 @@ figcaption{
     max-width: 100vw;
     z-index: 1000;
 }
+
 @media(max-width:1200px){
     #album>div{
         grid-template-columns: repeat(2,1fr);
@@ -780,3 +803,46 @@ figcaption{
     }
 }
 
+/* Testimonials Page */
+#testimonials{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.testimonial{
+    width: 45%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    padding: 25px;
+    box-shadow: 0 0 5px var(--clr-lightgr);
+    margin: 60px 15px 15px 15px;
+    position: relative
+}
+@media(max-width: 750px){
+    .testimonial{
+        width: 90%;
+    }
+}
+.testimonial>div{
+    display: flex;
+}
+.test-quotation-mark{
+    position: absolute;
+    top: -50px;
+    width: 75px;
+}
+.test-quote{
+    font-style: italic;
+    font-size: 1.25em;
+}
+.test-name{
+    font-weight: bold;
+}
+.test-quote,
+.test-name{
+    color: var(--clr-light)
+}
