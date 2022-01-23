@@ -755,6 +755,16 @@ figcaption{
     width: 100%;
     padding: 0 5% 5% 5%;
 }
+#cd-inserts{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#cd-inserts>img{
+    width: 47.5%;
+    min-width: 300px;
+    margin: 0 1.25% 2.5% 1.25%;
+}
 @media(max-width:1200px){
     #album>div{
         grid-template-columns: repeat(2,1fr);
@@ -781,6 +791,9 @@ figcaption{
     #album>div>div:last-of-type{
         grid-column-start: 1;
         grid-row-start: 3;
+    }
+    #cd-inserts>img{
+        flex-grow: 1;
     }
 }
 
